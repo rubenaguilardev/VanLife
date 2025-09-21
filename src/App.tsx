@@ -8,12 +8,15 @@ import Vans from "./components/Vans"
 const App = () => {
   return (
     <Router>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path='/vans' element={<Vans/>}/>
-      </Routes>
+      <div className="w-full h-screen flex flex-col">
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path='/vans' element={<Vans/>}/>
+        </Routes>
+      </div>
+     
     </Router>
   )
 }
